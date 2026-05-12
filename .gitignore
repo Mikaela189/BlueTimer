@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# PyInstaller
+build/
+*.spec.bak
+
+# Local runtime data
+*.log
+*.err.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+
+# Keep release artifacts explicit.
+# dist/ and release/ are intentionally not ignored for now because this project
+# currently ships testable Windows binaries from the repository.
