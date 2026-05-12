@@ -7,7 +7,7 @@
 不依赖 Inno Setup，使用 PyInstaller 打包安装器：
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 cd installer
 ..\.venv\Scripts\pyinstaller.exe --clean uninstall.spec
 ..\.venv\Scripts\pyinstaller.exe --clean setup.spec
@@ -16,7 +16,7 @@ cd installer
 生成文件：
 
 ```text
-D:\啊\bluetimer\installer\dist\BlueTimer_Setup_v0.1.0.exe
+installer\dist\BlueTimer_Setup_v0.1.0.exe
 ```
 
 安装包会把 `BlueTimer.exe` 和 `Launcher.exe` 安装到：
@@ -32,6 +32,6 @@ C:\Program Files\BlueTimer
 如果本机安装了 Inno Setup 6，也可以编译 `BlueTimer.iss`：
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 ISCC.exe .\installer\BlueTimer.iss
 ```

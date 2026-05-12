@@ -9,16 +9,16 @@ BlueTimer 是一个 Windows 蓝牙定时开关工具。程序常驻系统托盘�
 - 发布形式：单文件安装包 / 单文件主程序
 - 权限要求：管理员权限
 
-最新安装包：
+最新安装包可从仓库的 `release/` 目录或 GitHub Releases 下载：
 
 ```text
-D:\啊\bluetimer\release\BlueTimer_Setup_v0.1.3.exe
+release/BlueTimer_Setup_v0.1.3.exe
 ```
 
-最新主程序：
+如果只想运行未安装版，也可以使用：
 
 ```text
-D:\啊\bluetimer\dist\BlueTimer.exe
+dist/BlueTimer.exe
 ```
 
 ## 安装和使用
@@ -78,7 +78,7 @@ pnputil: 该操作系统产品不支持此命令
 如果蓝牙适配器检测异常，可以运行诊断脚本：
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 powershell -ExecutionPolicy Bypass -File .\tools\diagnose_bluetooth.ps1
 ```
 
@@ -89,14 +89,14 @@ powershell -ExecutionPolicy Bypass -File .\tools\diagnose_bluetooth.ps1
 ## 开发运行
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 .\.venv\Scripts\python.exe main.py
 ```
 
 安装依赖：
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
@@ -105,21 +105,21 @@ cd D:\啊\bluetimer
 主程序：
 
 ```powershell
-cd D:\啊\bluetimer
+cd BlueTimer
 .\.venv\Scripts\pyinstaller.exe --clean bluetimer.spec
 ```
 
 Launcher：
 
 ```powershell
-cd D:\啊\bluetimer\launcher
+cd BlueTimer\launcher
 ..\.venv\Scripts\pyinstaller.exe --clean launcher.spec
 ```
 
 安装器：
 
 ```powershell
-cd D:\啊\bluetimer\installer
+cd BlueTimer\installer
 ..\.venv\Scripts\pyinstaller.exe --clean uninstall.spec
 ..\.venv\Scripts\pyinstaller.exe --clean setup.spec
 ```
